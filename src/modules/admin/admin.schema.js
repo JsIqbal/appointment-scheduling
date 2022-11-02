@@ -1,3 +1,3 @@
-const adminSchema = () => {
+const Schema = () => {
     console.log("Schema >>");
 }
