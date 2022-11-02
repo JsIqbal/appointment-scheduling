@@ -1,5 +1,6 @@
-const { admin } = require('./admin.controller');
+const { login } = require('./admin.controller');
 
 module.exports = (app) => {
-    app.get('/api/admin', admin);
+    app.route('/api/admin')
+        .post(login);
 }
