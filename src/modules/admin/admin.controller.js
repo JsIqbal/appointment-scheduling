@@ -1,4 +1,7 @@
-const Admin = require('../admin/admin.model');
+const path = require('path');
+const Admin = require(path.join(process.cwd(),'src/modules/admin/admin.model'));
+
+const { generateAccessToken } = require(path.join(process.cwd(), "src/modules/admin/admin.service"));
 
 const login = async (req, res) => {
     try {
