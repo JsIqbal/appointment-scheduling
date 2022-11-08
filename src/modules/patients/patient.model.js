@@ -2,8 +2,8 @@ const path = require("path");
 const sequelize = require(path.join(process.cwd(), "/src/config/lib/sequelize.js"));
 const { DataTypes } = require("sequelize");
 
-const Admin = sequelize.define(
-	"admins",
+const Patient = sequelize.define(
+	"patients",
 	{
 		id: {
 			allowNull: false,
@@ -21,10 +21,10 @@ const Admin = sequelize.define(
 		}
 	},
 	{
-		tableName: "admins",
+		tableName: "patients",
 		timestamps: false,
 		createdAt: "created_at",
 		updatedAt: "updated_at",
 	}
 );
-module.exports = Admin;
+module.exports = Patient;
