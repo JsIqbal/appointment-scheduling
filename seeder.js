@@ -13,6 +13,8 @@ const init = async () => {
     });
 
     const Admin = require(path.join(process.cwd(), "src/modules/admin/admin.model.js"));
+    
+    require(path.join(process.cwd(), "src/modules/patients/patient.model.js"));
 
     await sequelize.sync();
 
